@@ -1,0 +1,187 @@
+main {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.illustration {
+    max-width: 100%;
+    height: auto;
+    margin: 0 8%;
+}
+.logo {
+    max-width: 32%;
+    text-align: left;
+    margin: 10% 8% 20% 8%;
+}   
+h2 {
+    text-align: center;
+    margin: 2% 8%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 3rem;
+}
+p {
+    text-align: center;
+    margin: 0% 8% 2%;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 2.125rem;
+}
+.register {
+    text-align: center;
+    padding: 2.5% 20%;
+    border: transparent;
+    margin: 2.5% auto 15% auto;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.45rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgb(83, 58, 139);
+}
+.register:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.fa-instagram {
+    color: #ffffff;
+    border: 0.125rem solid white;
+    border-radius: 2rem;
+    padding: 0.9375rem;
+    margin: 0.1875rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-twitter:hover  {
+    cursor: pointer;
+    color:hsl(300, 69%, 71%);
+    border: 0.125rem solid hsl(300, 69%, 71%);
+}
+.fa-facebook-f {
+    width: 1.5rem;
+    color: #ffffff;
+    border: 0.125rem solid white;
+    border-radius: 2rem;
+    padding: 0.9375rem;
+    margin: 0.1875rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.fa-twitter {
+    width: 1.5rem;
+    color: #ffffff;
+    border: 0.125rem solid white;
+    border-radius: 2rem;
+    padding: 0.9375rem;
+    margin: 0.1875rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.attribution a:hover {
+    color:hsl(300, 69%, 71%);
+    transition: all 0.5s ease-in;
+} 
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container img {
+        width: max-content;
+        height: max-content;
+        margin: 0 0 0 5%;
+    }
+    .container h2 {
+        text-align: left;
+        font-size: 2.5625rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    main {
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: repeat-x;
+        background-position: top 0 right 3rem;
+        max-width: 90rem;
+        width: 130%;
+        margin: 0 auto;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .logo {
+        margin: 5% 0 7% 5%;
+        width: 15%
+    }
+    .main {
+        padding: 4% 0 0 0;
+    }
+    .social-media {
+        margin: 2% 3% 2% 5%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .register {
+        padding: 0.9375rem;
+        width: 12.5rem;
+        text-align: center;
+        font-size: 1.1875rem;
+        margin: 2% 8%;
+    }
+    .fa-twitter {
+        color: #ffffff;
+        height: fit-content;
+        width: fit-content;
+        border: 1.5px solid white;
+        padding: 0.6875rem;
+        margin: 0.1875rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .fa-facebook-f {
+        color: #ffffff;
+        width: min-content;
+        border-radius: 50%;
+        border: 0.0938rem solid white;
+        padding: 0.6875rem 0.875rem;
+        margin: 0.1875rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .fa-instagram {
+        color: #ffffff;
+        height: fit-content;
+        width: fit-content;
+        border: 0.0938rem solid white;
+        padding: 0.6875rem;
+        margin: 0.1875rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
